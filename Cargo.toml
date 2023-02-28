@@ -11,15 +11,17 @@ keywords = ["paillier", "homomorphic", "encryption", "zero-knowledge", "cryptoag
 [dependencies]
 rayon = "1.1"
 serde = { version = "1.0", features = ["derive"] }
-curv-kzen = { version = "0.9", default-features = false }
+
+[dependencies.curv-kzen]
+git = "https://github.com/tirogen/curv.git"
+branch = "v0.9.0.1"
+default-features = false
+features = ["num-bigint"]
 
 [dev-dependencies]
 bencher = "0.1"
 serde_json = "1.0"
 rand = "0.6"
-
-[features]
-default = ["curv-kzen/rust-gmp-kzen"]
 
 [[bench]]
 name = "arith"
