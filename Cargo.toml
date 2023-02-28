@@ -1,5 +1,5 @@
 [package]
-name = "kzen-paillier"
+name = "paillier"
 version = "0.4.2"
 edition = "2018"
 description = "Efficient pure-Rust library for the Paillier partially homomorphic encryption scheme"
